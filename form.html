@@ -4,44 +4,45 @@
 	<title></title>
 </head>
 <body>
+
 	
 	<div id="Form" style=" border: 3px solid black; color: black;  width: 1218px; height: 405px; padding: 5px">
 		<h3 align="center">Form Pengisian Data</h3>
-		<form>
+		<form method="POST" action="welcome.php">
 			<label for="Nama">Nama&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
-			<input type="text" id="Nama" size="50">
+			<input type="text" id="Nama" name="Nama" size="50">
 				<br><br>
 			<label for="Alamat">Alamat&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
-			<input type="text" id="Alamat" size="50">
+			<input type="text" id="Alamat" name="Alamat" size="50">
 				<br><br>
 			<label for="Telp">Telp&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; : </label>
-			<input type="text" id="Telp" size="50">
+			<input type="text" id="Telp" name="Telp" size="50">
 				<br><br>
-			<label>Jenis Kelamin&emsp;&emsp;&emsp;&emsp;&ensp;&ensp; :</label>
-			<input type="radio" id="lk" name="jk"><label for="lk">Laki-laki</label>
-			<input type="radio" id="pr" name="jk"><label for="pr">Perempuan</label>
+			<label for="jKelamin">Jenis Kelamin&emsp;&emsp;&emsp;&emsp;&ensp;&ensp; :</label>
+			<input type="radio" id="jKelamin" value="Laki-laki" name="jk"><label for="lk">Laki-laki</label>
+			<input type="radio" id="jKelamin" value="Perempuan" name="jk"><label for="pr">Perempuan</label>
 				<br><br>
-			<label>Bahasa dikuasai &emsp;&emsp;&emsp;&ensp;&ensp; :</label>
-			<input type="checkbox" name="pil1"><label for="pil1">C++</label>
-			<input type="checkbox" name="pil2"><label for="pil2">Html dan CSS</label>
-			<input type="checkbox" name="pil3"><label for="pil3">Java</label>
-			<input type="checkbox" name="pil4"><label for="pil4">Python</label>
-			<input type="checkbox" name="pil5"><label for="pil5">Php</label>
+			<label for="Bahasa">Bahasa dikuasai &emsp;&emsp;&emsp;&ensp;&ensp; :</label>
+			<input type="checkbox" id="Bahasa" value="c++" name="pil[]"><label for="pil1">C++</label>
+			<input type="checkbox" id="Bahasa" value="Html dan CSS" name="pil[]"><label for="pil2">Html dan CSS</label>
+			<input type="checkbox" id="Bahasa" value="Java" name="pil[]"><label for="pil3">Java</label>
+			<input type="checkbox" id="Bahasa" value="Python" name="pil[]"><label for="pil4">Python</label>
+			<input type="checkbox" id="Bahasa" value="PHP" name="pil[]"><label for="pil5">Php</label>
 				<br><br>
-			<label>Agama&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
-			<select>
-				<label>Agama:</label>
-				<option>Islam</option>
-				<option>Katolik</option>
-				<option>Protestan</option>
-				<option>Buddha</option>
-				<option>Hindu</option>
-				<option>Konghucu</option>
+			<label for="Agama">Agama&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
+			<select id="Agama" name="Agama">
+				<option value="Islam">Islam</option>
+				<option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghucu">Konghucu</option>
 			</select>
 				<br><br>
-			<label>Prestasi yang pernah diraih: </label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<textarea></textarea>
+			<label for="Prestasi">Prestasi yang pernah diraih: </label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<textarea id="Prestasi" name="Prestasi"></textarea>
 				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-			<button type="submit">Simpan</button>&emsp;<button type="submit">Batal</button>
+			<button type="submit">Simpan</button>
 		</form>
 
 	</div>
