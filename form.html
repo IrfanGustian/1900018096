@@ -2,49 +2,153 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script language="javascript" src="myscript.js"></script>
 </head>
-<body>
+<body style="background-color: grey">
+<br><br><br><br>
+<div class="container">
+	<p style="font-size: 40px;">SELAMAT DATANG DI WEBSITE PENDAFTARAN CLUB NGODING</p>
 
-	
-	<div id="Form" style=" border: 3px solid black; color: black;  width: 1218px; height: 405px; padding: 5px">
-		<h3 align="center">Form Pengisian Data</h3>
-		<form method="POST" action="welcome.php">
-			<label for="Nama">Nama&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
-			<input type="text" id="Nama" name="Nama" size="50">
-				<br><br>
-			<label for="Alamat">Alamat&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: </label>
-			<input type="text" id="Alamat" name="Alamat" size="50">
-				<br><br>
-			<label for="Telp">Telp&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; : </label>
-			<input type="text" id="Telp" name="Telp" size="50">
-				<br><br>
-			<label for="jKelamin">Jenis Kelamin&emsp;&emsp;&emsp;&emsp;&ensp;&ensp; :</label>
-			<input type="radio" id="jKelamin" value="Laki-laki" name="jk"><label for="lk">Laki-laki</label>
-			<input type="radio" id="jKelamin" value="Perempuan" name="jk"><label for="pr">Perempuan</label>
-				<br><br>
-			<label for="Bahasa">Bahasa dikuasai &emsp;&emsp;&emsp;&ensp;&ensp; :</label>
-			<input type="checkbox" id="Bahasa" value="c++" name="pil[]"><label for="pil1">C++</label>
-			<input type="checkbox" id="Bahasa" value="Html dan CSS" name="pil[]"><label for="pil2">Html dan CSS</label>
-			<input type="checkbox" id="Bahasa" value="Java" name="pil[]"><label for="pil3">Java</label>
-			<input type="checkbox" id="Bahasa" value="Python" name="pil[]"><label for="pil4">Python</label>
-			<input type="checkbox" id="Bahasa" value="PHP" name="pil[]"><label for="pil5">Php</label>
-				<br><br>
-			<label for="Agama">Agama&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:</label>
-			<select id="Agama" name="Agama">
-				<option value="Islam">Islam</option>
-				<option value="Katolik">Katolik</option>
-				<option value="Protestan">Protestan</option>
-				<option value="Buddha">Buddha</option>
-				<option value="Hindu">Hindu</option>
-				<option value="Konghucu">Konghucu</option>
-			</select>
-				<br><br>
-			<label for="Prestasi">Prestasi yang pernah diraih: </label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-			<textarea id="Prestasi" name="Prestasi"></textarea>
+	<div align="left">
+		<form name="daftarc" onsubmit="return validasi()" method="POST" action="welcome.php">
+			<table>
+				<tr>
+					<td>
+						<label for="Nama">Nama: </label>
+					</td>
+					<td>
+						<input type="text" id="Nama" name="Nama" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Alamat">Alamat: </label>
+					</td>
+					<td>
+						<input type="text" id="Alamat" name="Alamat" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Telp">Telpon: </label>
+					</td>
+					<td>
+						<input type="text" id="Telp" name="Telp" size="50">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="jKelamin">Jenis Kelamin:</label>
+					</td>
+					<td>
+						<input type="radio" id="jKelamin" value="Laki-laki" name="jk"><label for="lk">Laki-laki</label>
+						<input type="radio" id="jKelamin" value="Perempuan" name="jk"><label for="pr">Perempuan</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Bahasa">Bahasa yang dikuasai:</label>
+					</td>
+					<td>
+						<input type="checkbox" id="Bahasa" value="c++" name="pil[]"><label for="pil1">C++</label>
+						<input type="checkbox" id="Bahasa" value="Html dan CSS" name="pil[]"><label for="pil2">Html dan CSS</label>
+						<input type="checkbox" id="Bahasa" value="Java" name="pil[]"><label for="pil3">Java</label>
+						<input type="checkbox" id="Bahasa" value="Python" name="pil[]"><label for="pil4">Python</label>
+						<input type="checkbox" id="Bahasa" value="PHP" name="pil[]"><label for="pil5">Php</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Agama">Agama: </label><br>
+					</td>
+					<td>
+						<select id="Agama" name="Agama">
+							<option value="Islam">Islam</option>
+							<option value="Katolik">Katolik</option>
+							<option value="Protestan">Protestan</option>
+							<option value="Buddha">Buddha</option>
+							<option value="Hindu">Hindu</option>
+							<option value="Konghucu">Konghucu</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Prestasi">Prestasi yang pernah diraih:</label>
+					</td>
+					<td>
+						<textarea id="Prestasi" name="Prestasi"></textarea>
+					</td>
+				</tr>
+			</table>
 				<br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-			<button type="submit">Simpan</button>
+			<button onclick="daftar()" type="submit">Simpan</button>
+			<button type="reset">reset</button>
 		</form>
-
 	</div>
+	</h5>
+	 <ul class="buttons">
+	  <li><a  href="table.php">Lihat Pendaftar</a></li>
+	</ul>
+	 <hr>
+	 <p>Rubah Warna Background</p>
+	 <ul class="buttons">
+	  <li><a onclick="myFunction()" href="#">MERAH</a></li>
+	  <li><a onclick="myFunction1()" href="#">BIRU</a></li>
+	  <li><a onclick="myFunction2()" href="#">ABU-ABU</a></li>
+	  <li><a onclick="myFunction3()" href="#">HIJAU</a></li>
+	</ul>
+	 <p>Praktikum Pemrograman Web 12</p>
+
+    </div>
+
+</div>
+<script>
+function validasi(){
+	var nama = document.forms["daftarc"]["Nama"].value;
+	var alamat = document.forms["daftarc"]["Alamat"].value;
+	var tel = document.forms["daftarc"]["Telp"].value;
+	var jk = document.forms["daftarc"]["jk"].value;
+	var agama = document.forms["daftarc"]["Agama"].value;
+	var prestasi = document.forms["daftarc"]["Prestasi"].value;
+	if (nama == ""){
+		alert("Form masih ada yang kosong");
+		return false;
+	}else if (alamat == "") {
+		alert("Form masih ada yang kosong");
+		return false;
+	}else if (tel == "") {
+		alert("Form masih ada yang kosong");
+		return false;
+	}else if (jk == "") {
+		alert("Form masih ada yang kosong");
+		return false;
+	}else if (agama == "") {
+		alert("Form masih ada yang kosong");
+		return false;
+	}else if (prestasi == "") {
+		alert("Form masih ada yang kosong");
+		return false;
+	}
+
+}
+
+function myFunction() {
+  document.body.style.backgroundColor = "#ff9999";
+}
+
+function myFunction1() {
+  document.body.style.backgroundColor = "#99b3ff";
+}
+
+function myFunction2() {
+  document.body.style.backgroundColor = "grey";
+}
+
+function myFunction3() {
+  document.body.style.backgroundColor = "#b3ff99";
+}
+</script>
 </body>
 </html>

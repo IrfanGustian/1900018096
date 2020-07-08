@@ -1,0 +1,29 @@
+.container{
+  padding: 10px;
+ background-color: #e1e1d0;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+body { font-family: Calibri, Helvetica, Arial, sans-serif; }
+
+.container .buttons li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 30px;
+  width: 100px;
+  line-height: 20px;
+}
+.container .buttons li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+}
+
+.container .buttons li a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #33B5E5;
+}
