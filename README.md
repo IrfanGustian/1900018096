@@ -15,3 +15,5 @@ Perubahan:
 1.file table.html dirubah ekstensinya menjadi table.php agar memudahkan proses pembuatan script atau code
 
 2.penambahan file style.css
+
+3. ini tambahan, bila berhasil terlihat berarti berhasil
