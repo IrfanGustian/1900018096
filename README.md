@@ -17,3 +17,5 @@ Perubahan:
 2.penambahan file style.css
 
 3. ini tambahan, bila berhasil terlihat berarti berhasil
+
+4. Ini tambahan lagi gaes
